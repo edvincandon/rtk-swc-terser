@@ -33,7 +33,7 @@ module.exports = {
     minimizer: [
       new TerserPlugin({
         minify: TerserPlugin.swcMinify,
-        terserOptions: { compress: { dead_code: true, passes } },
+        terserOptions: { compress: { passes } },
         extractComments: false,
       }),
     ],
